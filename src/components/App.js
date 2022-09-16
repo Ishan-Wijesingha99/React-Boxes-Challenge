@@ -6,9 +6,7 @@ import { Box } from "./Box"
 
 
 export const App = function(props) {
-    const [boxArray, setBoxes] = React.useState(boxes)
-
-
+    const boxArray = boxes
 
     const jsxArray = boxArray.map(object => {
         return <Box key={object.id} on={object.on}/>
